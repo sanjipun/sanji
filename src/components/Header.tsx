@@ -8,19 +8,19 @@ import useHamburger from '../store/Hamburger.store';
 const Header = () => {
   const { openMenu, setOpenMenu } = useHamburger();
   return (
-    <header className="flex justify-between items-center py-10">
+    <header className="max-w-8xl w-full mx-auto px-10 flex justify-between items-center py-10">
       <h1 className="text-2xl uppercase tracking-widest">
         <span className="border text-base py-2 px-3 border-black rounded-full">S</span> Sanji
       </h1>
       <div className="hidden md:inline-flex">
         {HEADER_CONTENTS.map((header, index) => (
-          <Link key={index} to={header.path}>
-            <a
-              className="mx-2 p-2 text-sm flex flex-col items-end hover:bg-black hover:text-white 
-              transition-all duration-300 ease-in">
-              0{index + 1}
-              <span className="text-lg">{header.name}</span>
-            </a>
+          <Link
+            key={index}
+            to={header.path}
+            className="mx-2 p-2 text-sm flex flex-col items-end hover:bg-black hover:text-white 
+          transition-all duration-300 ease-in">
+            0{index + 1}
+            <span className="text-lg">{header.name}</span>
           </Link>
         ))}
       </div>
