@@ -19,11 +19,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   }, [openMenu]);
 
   return (
-    <main className="max-w-8xl w-full mx-auto px-10">
+    <main className="">
       <Header />
       <HeaderMobile />
       {children}
-      <footer>THis is footer</footer>
+      <footer className="max-w-8xl w-full mx-auto px-10">THis is footer</footer>
     </main>
   );
 };
