@@ -13,13 +13,13 @@ const HeaderMobile: React.FC<HeaderMobileProps> = () => {
         openMenu ? 'max-h-96 py-10' : 'max-h-0 py-0'
       } overflow-hidden transition-all duration-300 ease-in bg-pink-400 text-white`}>
       {HEADER_CONTENTS.map((header, index) => (
-        <Link key={index} to={header.path}>
-          <a
-            className="mx-2 p-2 text-sm flex flex-col items-center justify-center hover:bg-black
-           hover:text-white transition-all duration-300 ease-in-out">
-            0{index + 1}
-            <span className="text-lg">{header.name}</span>
-          </a>
+        <Link
+          key={index}
+          className="mx-2 p-2 text-sm flex flex-col items-center justify-center hover:bg-black
+        hover:text-white transition-all duration-300 ease-in-out"
+          to={header.path}>
+          0{index + 1}
+          <span className="text-lg">{header.name}</span>
         </Link>
       ))}
     </div>
