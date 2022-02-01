@@ -23,7 +23,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header />
       <HeaderMobile />
       {children}
-      <footer className="max-w-8xl w-full mx-auto px-10">THis is footer</footer>
     </main>
   );
 };
