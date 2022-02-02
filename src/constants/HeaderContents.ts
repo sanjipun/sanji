@@ -1,19 +1,19 @@
 const HEADER_CONTENTS: { name: string; path: string }[] = [
     {
         name: 'Home',
-        path: '/',
+        path: 'home',
     },
     {
         name: 'About Me',
-        path: '/about',
+        path: 'about',
     },
     {
         name: "Works",
-        path: '/works'
+        path: 'works'
     },
     {
         name: "Skills",
-        path: "/skills"
+        path: "skills"
     },
 ];
 export default HEADER_CONTENTS;
