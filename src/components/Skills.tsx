@@ -11,8 +11,10 @@ const Skills = () => {
   return (
     <div id="skills" className="bg-black text-white">
       <div className="py-44 px-10 max-w-8xl mx-auto grid grid-cols-12">
-        <div className="col-span-2">Skills</div>
-        <div className="col-span-10">
+        <div className="col-span-12 md:col-span-2 flex flex-col items-start">
+          <h1>04</h1>Skills
+        </div>
+        <div className="col-span-12 md:col-span-10">
           <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 place-items-center">
             <FaReact className="w-20 h-20" />
             <SiTailwindcss className="w-20 h-20" />

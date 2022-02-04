@@ -18,7 +18,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ work, index }) => {
       target="_blank"
       className="relative overflow-hidden grid grid-cols-12 bg-black hover:bg-pink-600 transition-all duration-700 ease-in-out text-white my-5">
       <div
-        className={`col-span-4 w-auto h-72 bg-white sm:flex justify-center items-center hidden ${
+        className={`col-span-4 w-auto h-60 bg-white sm:flex justify-center items-center hidden ${
           index % 2 === 0 ? 'order-2' : 'order-1'
         }`}>
         <img src={work.img} className="object-cover sm:p-3 md:p-4 xl:p-16" alt="" />

@@ -4,7 +4,9 @@ const About = () => {
   return (
     <div id="about" className="bg-black text-white">
       <div className="max-w-8xl grid grid-cols-1 md:grid-cols-3 gap-20 w-full mx-auto px-10 py-44">
-        <div>About Me</div>
+        <div className="flex flex-col items-start">
+          <h1>02</h1>About Me
+        </div>
         <div className="grid grid-cols-1 gap-10">
           <p>
             I am Frontend Developer with 1 year+ experience in React JS. I can convert wireframes

@@ -8,7 +8,7 @@ import Works from '../components/Works';
 const IndexPage = () => {
   return (
     <section>
-      <SEO title="Sanji Pun | Frontend Engineer" />
+      <SEO title="Sanji Pun | Frontend Developer" />
       <div id="home" className="max-w-8xl w-full mx-auto px-10 py-44">
         <h1 className="text-3xl italic font-extralight text-black text-opacity-50">
           Hello! I'm Sanji Pun
